@@ -12,6 +12,7 @@
 
   <!-- Input Fields -->
   <input type="text" id="item-name-input" placeholder="Enter item name" aria-label="Item name">
+  <input type="number" id="item-qty-input" placeholder="Enter quantity" aria-label="Item quantity" min="1">
   <input type="number" id="item-price-input" placeholder="Enter item price" aria-label="Item price" min="1">
   <button id="add">Add</button>
 
@@ -20,13 +21,15 @@
     <thead>
       <tr>
         <th>Item</th>
+        <th>Qty</th>
         <th>Price</th>
+        <th>Total</th>
       </tr>
     </thead>
     <tbody id="cart-body">
       <!-- Grand total row -->
       <tr>
-        <td><strong>Grand Total</strong></td>
+        <td colspan="3"><strong>Grand Total</strong></td>
         <td id="total">0</td>
       </tr>
     </tbody>
